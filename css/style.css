@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.productos h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.horizontal {
+    display: flex;
+}
+.horizontal li {
+    list-style: none;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.horizontal li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.filtro {
+    margin: 10px;
+}
+
+.filtro li {
+    font-size: 0.9rem;
+    padding: 0 5px;
+    color: #666666;
+}
+.filtro li a {
+    color: #666666;
+}
+
+#patitaImage {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.containerProductos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px 10px 30px;
+}
+
+.product{
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    min-width: 265px;
+    max-width: 350px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+.product span {
+    color: #F0A83E;
+}

@@ -1,29 +1,93 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <title>My page title</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/style.css">
+		<title>PetShop</title>
+	</head>
+	<body>
 
   <body>
-
-    <header>
-      <h1>Header</h1>
-    </header>
-
-    <nav>
-
-    </nav>
-
-
-    <section class="information">
+    <!-- TOP BAR -->
+		<div class="top">
+        	<p>Grandes ofertas en comedores</p>
+        	<ul class="moneda">
+            	<li>Colombia<i class="fas fa-chevron-down"></i></li>
+            	<li>COP<i class="fas fa-chevron-down"></i></li>
+        	</ul>
+    	</div>
+		<!-- NAVEGACION -->
+		<nav>
+			<a href="#"><img src="img/headerLogo.svg" alt="Logo"></a>
+			<!-- ITEMS DE MENU -->
+			<ul class="horizontalmenu">
+				<li><a href="#"><img src="img/pawprint.svg" alt=""> Categorías</a></li>
+				<li><a href="#"><img src="img/pawprint.svg" alt=""> Pets</a></li>
+				<li><a href="#"><img src="img/pawprint.svg" alt=""> Nosotros</a></li>
+				<li><a href="#"><img src="img/pawprint.svg" alt=""> Contactanos</a></li>
+			</ul>
+			<img src="./img/menu-icon.svg" alt="menu hamburguesa" class="menu-hamburguesa">
+		</nav>
+    
+<!-- BANNER ENCABEZADO -->
+		<header>
+			<div class="banner">
+				<p id="firstText">¡Es un placer tenerte aquí!</p>
+				<p id="secondText">¡Comederos en descuentos!</p>
+				<button id="buttonComedero">COMEDEROS</button>
+			</div>
+		</header>
+    
+     <div class="productos">
+        <img id="patitaImage" src="img_body/patita.png">
+        <h2>Productos Destacados</h2>
+        <ul class="horizontal filtro">
+            <li><a href="">Comederos</a></li>
+            <li>-</li>
+            <li><a href="">Accesorios</a></li>
+            <li>-</li>
+            <li><a href="">Comida</a></li>
+        </ul>
+    </div>
+    <section class="containerProductos">
+        <article class="product">
+            <img src="img_body/juguete_cuerda.png" alt="Imagen de una cuerda con nudos">
+            <h3>Juguete cuerda</h3>
+            <span>$50.000</span>
+        </article>
+        <article class="product">
+            <img src="img_body/kit_perro_raza_pequeña.png" alt="Imagen de kit para perro raza pequeña">
+            <h3>kit para perro de raza pequeña.png</h3>
+            <span>$250.000</span>
+        </article>
+        <article class="product">
+            <img src="img_body/estuche_bolsas.png" alt="Imagen de estuche y bolsas desechables">
+            <h3>Estuche más bolsas</h3>
+            <span>$30.000</span>
+        </article>
+    </section>
+    
+    <section class="contacto">
+        <h2>Contáctanos</h2>
+        <input type="text" id="nombre" placeholder="Nombre y apellido">
+        <input type="text" id="correo" placeholder="Ingresa tu correo electrónico">
+        <input type="text" id="telefono" placeholder="Teléfono">
+        <div class="botones">
+            <button id="resetear" onclick="limpiarCampos()">Resetear</button>
+            <button id="enviar">Enviar</button>
+        </div>
+    </section>
+    
+    <section class="suscription">
+			<div class="sub-title">
+				<h3>Suscríbete para más novedades</h3>
+			</div>
+			<div class="sub-form">
+				<input type="text" placeholder="Ingresa tu correo electrónico">
+				<button>Suscribirme</button>
+			</div>
+		</section>
+      <section class="information">
 			<div class="info">
 				<div class="localidad">
 					<img src="img_footer/localidad.svg" alt="">
@@ -54,5 +118,13 @@
 		<footer>
 			<p>Todos los derechos reservados Front End</p>
 		</footer>
+    
+    <script>
+        function limpiarCampos() {
+          document.getElementById("nombre").value = "";
+          document.getElementById("correo").value = "";
+          document.getElementById("telefono").value = "";
+        }
+    </script>
   </body>
 </html>

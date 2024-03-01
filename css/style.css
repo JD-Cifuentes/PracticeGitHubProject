@@ -243,4 +243,42 @@ button:hover{
     color: #F0A83E;
 
 }
+  
+  .information {
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 70px;
+}
+.information p {
+    color: white;
+}
+.information span {
+    color: #8A8787;
+}
+.information .logo {
+    align-self: center;
+    margin: 10px;
+}
 
+.info-group {
+    margin-left: 15px;
+}
+
+.localidad, .telefono, .correo {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.information .logo {
+    align-self: center;
+    margin: 10px;
+}
+
+footer {
+    background-color: #222222;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5px;
+}

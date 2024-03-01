@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/style.css">
+		<title>PetShop</title>
+	</head>
+	<body>
+		<!-- TOP BAR -->
+		<div class="top">
+        	<p>Grandes ofertas en comedores</p>
+        	<ul class="moneda">
+            	<li>España<i class="fas fa-chevron-down"></i></li>
+            	<li>$ARG<i class="fas fa-chevron-down"></i></li>
+        	</ul>
+    	</div>
+		<!-- NAVEGACION -->
+		<nav>
+			<a href="#"><img src="img/headerLogo.svg" alt="Logo"></a>
+			<!-- ITEMS DE MENU -->
+			<ul class="horizontalmenu">
+				<li><a href="#"><img src="img/pawprint.svg" alt=""> Categorías</a></li>
+				<li><a href="#"><img src="img/pawprint.svg" alt=""> Pets</a></li>
+				<li><a href="#"><img src="img/pawprint.svg" alt=""> Nosotros</a></li>
+				<li><a href="#"><img src="img/pawprint.svg" alt=""> Contactanos</a></li>
+			</ul>
+			<img src="./img/menu-icon.svg" alt="menu hamburguesa" class="menu-hamburguesa">
+		</nav>
+		<!-- BANNER ENCABEZADO -->
+		<header>
+			<div class="banner">
+				<p id="firstText">¡Es un placer tenerte aquí!</p>
+				<p id="secondText">¡Comederos en descuentos!</p>
+				<button id="buttonComedero">COMEDEROS</button>
+			</div>
+		</header>
+
+		<!-- SECCION DE PRODUCTOS -->
+		<div class="productos">
+			<img id="patitaImage" src="img/patita.png">
+			<h2>Productos Destacados</h2>
+			<ul class="horizontal filtro">
+				<li><a href="">Comederos</a></li>
+				<li>-</li>
+				<li><a href="">Accesorios</a></li>
+				<li>-</li>
+				<li><a href="">Comida</a></li>
+			</ul>
+		</div>
+		<section class="containerProductos">
+			<article class="product">
+				<img src="img/churrasquito.png" alt="Imagen de un juguete en forma de churrasco">
+				<h3>Juguete Churrasquito</h3>
+				<span>$150</span>
+			</article>
+			<article class="product">
+				<img src="img/comedero.png" alt="Imagen de comedero para perro">
+				<h3>Comedero para perro</h3>
+				<span>$250</span>
+			</article>
+			<article class="product">
+				<img src="img/Huesito.png" alt="Imagen de un jueguete en forma de hueso">
+				<h3>Juguete Huesito</h3>
+				<span>$650</span>
+			</article>
+		</section>
+
+		<!-- FORMULARIO DE CONTACTO -->
+		<section class="contacto">
+			<h2>Contáctanos</h2>
+			<input type="text" id="nombre" placeholder="Nombre y apellido">
+			<input type="text" id="correo" placeholder="Ingresa tu correo electrónico">
+			<input type="text" id="telefono" placeholder="Teléfono">
+			<div class="botones">
+				<button id="resetear" onclick="limpiarCampos()">Resetear</button>
+				<button id="enviar">Enviar</button>
+			</div>
+		</section>
+
+		<!-- SUSCRIPCIONES -->
+		<section class="suscription">
+			<div class="sub-title">
+				<img src="img/post-envelope.svg" alt="">
+				<h3>Suscríbete para más novedades</h3>
+			</div>
+			<div class="sub-form">
+				<input type="text" placeholder="Ingresa tu correo electrónico">
+				<button>Suscribirme</button>
+			</div>
+		</section>
+
+		<!-- INFORMACION -->
+		<section class="information">
+			<div class="info">
+				<div class="localidad">
+					<img src="img/localidad.svg" alt="">
+					<div class="info-group">
+						<p>Localidad</p>
+						<span>Calle - provincia</span>
+					</div>
+				</div>
+				<div class="telefono">
+					<img src="img/telefono.svg" alt="">
+					<div class="info-group">
+						<p>Telefóno</p>
+						<span>Número de teléfono</span>
+					</div>
+				</div>
+				<div class="correo">
+					<img src="img/correo.svg" alt="">
+					<div class="info-group">
+						<p>Correo electrónico</p>
+						<span>Dirección de correo</span>
+					</div>
+				</div>
+			</div>
+			<div class="logo">
+				<img src="img/LogoCatDog.svg" alt="Logo de la página web">
+			</div>
+		</section>
+		<footer>
+			<p>Todos los derechos reservados Front End</p>
+		</footer>
+		<script>
+			function limpiarCampos() {
+			  document.getElementById("nombre").value = "";
+			  document.getElementById("correo").value = "";
+			  document.getElementById("telefono").value = "";
+			}
+		</script>
+	</body>
+</html>

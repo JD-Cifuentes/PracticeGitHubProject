@@ -110,8 +110,37 @@ header {
     margin: 20px;
 }
 
+.suscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0A83E;
+    padding: 10px;
+}
+
+.suscription input {
+    background-color: white;
+    border: 0px;
+}
+.suscription button {
+    background-color: #3C2313;
+    color: white;
+}
+
+.sub-title, .sub-form {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.sub-title h3 {
+    color:#FFFFFF;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
 input {
-    background-color: #804927;
+    background-color: #3C2313;
     border: none;
     border-radius: 15px;
     color: white;
@@ -122,9 +151,6 @@ input {
     width: 90%;
 }
 
-.botones {
-    margin: 40px 0;
-}
 button {
     border-radius: 15px;
     border: none;
@@ -133,6 +159,10 @@ button {
     height: 34px;
 }
 
+.botones {
+    margin: 40px 0;
+}
+  
 button:hover{
     transform: scale(1.1); 
 }
@@ -213,3 +243,4 @@ button:hover{
     color: #F0A83E;
 
 }
+

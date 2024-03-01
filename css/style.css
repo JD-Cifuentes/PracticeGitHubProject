@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 body, html {
     margin: 0;
@@ -58,3 +59,42 @@ nav {
 .menu-hamburguesa {
     display: none;
 }
+
+header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url(./img/banner.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    min-height: 312px;
+}
+
+.banner {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#firstText {
+    background-color: white;
+    font-size: 1.8rem;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+}
+
+#secondText {
+    padding: 1.3rem;
+}
+
+#buttonComedero {
+    background-color: #F0A83E;
+    color: white;
+    border : 0px;
+    padding: 10px;
+    border-radius: 20px;
+}
+

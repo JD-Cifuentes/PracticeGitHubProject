@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
-    background-image: url(../img/banner.png);
+    background-image: url(./img/banner.png);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;

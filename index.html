@@ -38,5 +38,24 @@
 			</div>
 		</header>
     
+    <section class="contacto">
+        <h2>Contáctanos</h2>
+        <input type="text" id="nombre" placeholder="Nombre y apellido">
+        <input type="text" id="correo" placeholder="Ingresa tu correo electrónico">
+        <input type="text" id="telefono" placeholder="Teléfono">
+        <div class="botones">
+            <button id="resetear" onclick="limpiarCampos()">Resetear</button>
+            <button id="enviar">Enviar</button>
+        </div>
+    </section>
+    
+    <script>
+        function limpiarCampos() {
+          document.getElementById("nombre").value = "";
+          document.getElementById("correo").value = "";
+          document.getElementById("telefono").value = "";
+        }
+    </script>
+    
   </body>
 </html>

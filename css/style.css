@@ -4,7 +4,149 @@ body, html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-.productos {
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 0.1px 4%; 
+    font-weight: 400;
+}
+
+.moneda {
+    list-style-type: none;
+    display: flex;
+}
+.moneda li {
+    margin-right: 10px;
+    padding-left: 3px;
+}
+.moneda i {
+    font-size: 12px;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0A83E;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 70px;
+}
+
+.horizontalmenu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.horizontalmenu li {
+    margin-right: 10px;
+}
+.horizontalmenu li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url(./img/banner.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    min-height: 312px;
+}
+
+.banner {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#firstText {
+    background-color: white;
+    font-size: 1.8rem;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+}
+
+#secondText {
+    padding: 1.3rem;
+}
+
+#buttonComedero {
+    background-color: #F0A83E;
+    color: white;
+    border : 0px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+.contacto h2 {
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+input {
+    background-color: #804927;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    margin: 5px;
+    max-width: 310px;
+    height: 10px;
+    padding: 15px;
+    width: 90%;
+}
+
+.botones {
+    margin: 40px 0;
+}
+button {
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+    width: 110px;
+    height: 34px;
+}
+
+button:hover{
+    transform: scale(1.1); 
+}
+
+#resetear {
+    background-color: #a37571;
+    color: white;
+}
+
+#enviar {
+    background-color: #eebb70;
+    color: white;
+  
+  .productos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,4 +211,5 @@ body, html {
 }
 .product span {
     color: #F0A83E;
+
 }
